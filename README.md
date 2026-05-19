@@ -1,4 +1,5 @@
-# CEXS.io — Institutional Digital Asset Exchange & Settlement Infrastructure
+﻿[![AI Co-Pilot: OpenClaw](https://img.shields.io/badge/AI%20Co--Pilot-OpenClaw-FF4500?style=for-the-badge&logo=github)](https://openclaw.ai)
+# CEXS.io â€” Institutional Digital Asset Exchange & Settlement Infrastructure
 
 [![ATF-AI Verified](https://img.shields.io/badge/ATF--AI-VERIFIED-2ea44f?style=for-the-badge)](https://github.com/agronetlabs/ATF-AI)
 [![ERC-8040](https://img.shields.io/badge/ERC--8040-Compliant-0066ff?style=for-the-badge)](https://github.com/agronetlabs/erc-8040-ecosystem)
@@ -16,7 +17,7 @@
 
 ## What is CEXS.io?
 
-CEXS.io is an **institutional-grade digital asset exchange and settlement infrastructure** — built natively on the [ATF-AI Autonomous Trust Framework](https://github.com/agronetlabs/ATF-AI).
+CEXS.io is an **institutional-grade digital asset exchange and settlement infrastructure** â€” built natively on the [ATF-AI Autonomous Trust Framework](https://github.com/agronetlabs/ATF-AI).
 
 > Not just another exchange. A compliance-native settlement layer for the next generation of regulated digital assets.
 
@@ -25,57 +26,57 @@ CEXS.io is an **institutional-grade digital asset exchange and settlement infras
 ## Core Architecture
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                    CEXS.io PWA                       │
-│         Installable — No App Store Required          │
-└────────────────────┬────────────────────────────────┘
-                     │
-┌────────────────────▼────────────────────────────────┐
-│              Settlement Engine (Rust/Axum)           │
-│   ┌──────────────┬──────────────┬─────────────────┐ │
-│   │ TRON Network │ Ethereum     │ CCTP Cross-Chain │ │
-│   └──────────────┴──────────────┴─────────────────┘ │
-│              ATF-AI Audit Hash on every tx           │
-└────────────────────┬────────────────────────────────┘
-                     │
-┌────────────────────▼────────────────────────────────┐
-│           ATF-AI Compliance Layer                    │
-│   Zero-trust · Cryptographic Provenance · Auditable  │
-└────────────────────┬────────────────────────────────┘
-                     │
-┌────────────────────▼────────────────────────────────┐
-│           ERC-8040 Token Standard                    │
-│   ESG Scoring · SFDR Articles 6/8/9 · ISO 20022     │
-│   EU Taxonomy · SWIFT Bridge · Multi-chain           │
-└─────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    CEXS.io PWA                       â”‚
+â”‚         Installable â€” No App Store Required          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              Settlement Engine (Rust/Axum)           â”‚
+â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
+â”‚   â”‚ TRON Network â”‚ Ethereum     â”‚ CCTP Cross-Chain â”‚ â”‚
+â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
+â”‚              ATF-AI Audit Hash on every tx           â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚           ATF-AI Compliance Layer                    â”‚
+â”‚   Zero-trust Â· Cryptographic Provenance Â· Auditable  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚           ERC-8040 Token Standard                    â”‚
+â”‚   ESG Scoring Â· SFDR Articles 6/8/9 Â· ISO 20022     â”‚
+â”‚   EU Taxonomy Â· SWIFT Bridge Â· Multi-chain           â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
 
 ## Key Features
 
-### 🏛️ Institutional-Grade
+### ðŸ›ï¸ Institutional-Grade
 - Event-sourced architecture with complete audit trail
-- Double-entry accounting — cryptographically verifiable
+- Double-entry accounting â€” cryptographically verifiable
 - KYC/AML compliance ready
 - Full regulatory reporting capabilities
 
-### ⚡ Real-Time Settlement
+### âš¡ Real-Time Settlement
 - Multi-chain settlement: Ethereum, TRON, Base, Arbitrum
 - Cross-Chain Transfer Protocol (CCTP) by Circle
 - Stablecoin native: USDT, USDC
 - ATF-AI audit hash embedded in every transaction
 
-### 🌱 ESG & Compliance Native
-- ERC-8040 token standard — first ESG token with SWIFT ISO 20022 support
+### ðŸŒ± ESG & Compliance Native
+- ERC-8040 token standard â€” first ESG token with SWIFT ISO 20022 support
 - SFDR Article 6/8/9 automatic classification
 - EU Taxonomy alignment calculation
 - Carbon intensity estimation
 
-### 📱 PWA — No Gatekeepers
+### ðŸ“± PWA â€” No Gatekeepers
 - Installable on iOS and Android directly from browser
 - No App Store. No Play Store. No intermediaries.
-- Full native experience — offline capability, push notifications
+- Full native experience â€” offline capability, push notifications
 
 ---
 
@@ -100,7 +101,7 @@ Every settlement operation on CEXS.io generates an **ATF-AI Audit Hash**:
 ATF-AI-AUDIT-{SHA256(token_id + stablecoin + amount + wallet_from + wallet_to)}
 ```
 
-This hash is traceable back to the full ATF-AI provenance chain — connecting every on-chain settlement to its compliance attestation. Any auditor can verify the complete chain from SWIFT message to on-chain transaction.
+This hash is traceable back to the full ATF-AI provenance chain â€” connecting every on-chain settlement to its compliance attestation. Any auditor can verify the complete chain from SWIFT message to on-chain transaction.
 
 ---
 
@@ -108,7 +109,7 @@ This hash is traceable back to the full ATF-AI provenance chain — connecting e
 
 | Project | Description | Link |
 |---------|-------------|------|
-| **ATF-AI** | Autonomous Trust Framework — governance protocol | [github.com/agronetlabs/ATF-AI](https://github.com/agronetlabs/ATF-AI) |
+| **ATF-AI** | Autonomous Trust Framework â€” governance protocol | [github.com/agronetlabs/ATF-AI](https://github.com/agronetlabs/ATF-AI) |
 | **ERC-8040** | ESG Token Standard + SWIFT ISO 20022 bridge | [github.com/agronetlabs/erc-8040-ecosystem](https://github.com/agronetlabs/erc-8040-ecosystem) |
 | **AgroNet Backend** | Settlement engine (Rust/Axum) | [github.com/agronetlabs/backend](https://github.com/agronetlabs/backend) |
 | **AgroNet Labs** | Company | [agronet.ai](https://agronet.ai) |
@@ -117,12 +118,12 @@ This hash is traceable back to the full ATF-AI provenance chain — connecting e
 
 ## Roadmap
 
-- [x] ATF-AI Protocol — open spec published
-- [x] ERC-8040 — first ESG token with SWIFT ISO 20022 native support
-- [x] Settlement engine — Rust/Axum, multi-chain, live
-- [x] PWA — installable on iOS and Android
+- [x] ATF-AI Protocol â€” open spec published
+- [x] ERC-8040 â€” first ESG token with SWIFT ISO 20022 native support
+- [x] Settlement engine â€” Rust/Axum, multi-chain, live
+- [x] PWA â€” installable on iOS and Android
 - [x] KYC/AML compliance architecture
-- [ ] **Q2 2026 — Public launch**
+- [ ] **Q2 2026 â€” Public launch**
 - [ ] Institutional onboarding
 - [ ] Regulated markets integration
 
@@ -132,9 +133,9 @@ This hash is traceable back to the full ATF-AI provenance chain — connecting e
 
 For institutional inquiries, partnerships, or investor relations:
 
-🌐 [cexs.io](https://cexs.io)
-📩 contact@cexs.io
-📅 [Schedule a demo](https://calendly.com/admin-agronet/30min)
+ðŸŒ [cexs.io](https://cexs.io)
+ðŸ“© contact@cexs.io
+ðŸ“… [Schedule a demo](https://calendly.com/admin-agronet/30min)
 
 ---
 
@@ -142,3 +143,4 @@ For institutional inquiries, partnerships, or investor relations:
 > The production codebase is maintained privately under AgroNet Labs LLC governance.
 
 **AgroNet Labs LLC** | San Francisco | [agronet.ai](https://agronet.ai)
+
